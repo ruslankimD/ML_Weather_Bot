@@ -26,7 +26,8 @@ project/
 └─ README.md
 
 <h2>Explanation of how the code works</h2>
-<h3>train_model.py</h3> 
+<h3>train_model.py</h3>
+
 1.Loads the weather_classification_data.csv dataset from the ../Data/ folder.
 
 2.Selects the desired features:
