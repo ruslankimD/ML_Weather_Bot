@@ -45,8 +45,8 @@ RandomForestClassifier for classification
 5.Splits data into train/test, trains the model, evaluates quality (outputs classification_report).
 
 6.Saves the model and encoder:
-model.joblib — trained model
-label_encoder.joblib — class label encoder
+model.joblib - trained model
+label_encoder.joblib - class label encoder
 
 <h3>bot.py</h3>
 1.Loads the bot token and weather API key.
@@ -54,8 +54,8 @@ label_encoder.joblib — class label encoder
 2.Loads the model and encoder created in train_model.py.
 
 3.Processes Telegram commands:
-/start — greeting
-any message — is considered a city, the bot makes a forecast
+/start - greeting
+any message - is considered a city, the bot makes a forecast
 
 4.Gets geolocation by city name via OpenWeatherMap Geo API.
 
@@ -67,6 +67,49 @@ any message — is considered a city, the bot makes a forecast
 city, country
 temperature, humidity, cloudiness
 model prediction: for example, "Rain"
+
+<h2>Technologies and libraries used</h2>
+
+Python is the main language for working with ML, API and Telegram bots.
+
+<h3>Libraries and frameworks:</h3>
+
+<h3>Machine learning:</h3>
+
+ -scikit-learn (sklearn)
+
+ -RandomForestClassifier - classification model.
+
+ -LabelEncoder, OneHotEncoder - for processing categorical features.
+
+ -train_test_split, Pipeline, ColumnTransformer - for building a pipeline and training the model.
+
+ -classification_report - model quality assessment.
+ 
+<h3>Saving the model:</h3>
+ -joblib - serialization of the model and encoder (model.joblib, label_encoder.joblib).
+
+<h3>Working with data:</h3>
+
+ -pandas - for loading and processing data from CSV and forming inputs to the model.
+
+<h3>Working with API:</h3>
+
+ -requests - for getting data from OpenWeatherMap API (geolocation and weather).
+
+<h3>Telegram Bot:</h3>
+
+ -pyTelegramBotAPI (telebot) - for creating a Telegram bot.
+
+<h3>Working with paths and files:</h3>
+
+ -os - for cross-platform specifying of file paths.
+
+<h2>External services:</h2>
+
+ -OpenWeatherMap API - getting city coordinates and current weather conditions.
+
+ -Telegram Bot API - interacting with users via Telegram.
 
 
 
