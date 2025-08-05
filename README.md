@@ -48,11 +48,11 @@ model.joblib — trained model
 label_encoder.joblib — class label encoder
 
 <h3>bot.py</h3>
-1. Loads the bot token and weather API key.
+1.Loads the bot token and weather API key.
 
-2. Loads the model and encoder created in train_model.py.
+2.Loads the model and encoder created in train_model.py.
 
-3. Processes Telegram commands:
+3.Processes Telegram commands:
 /start — greeting
 any message — is considered a city, the bot makes a forecast
 
