@@ -50,7 +50,7 @@ RandomForestClassifier for classification
 model.joblib - trained model
 label_encoder.joblib - class label encoder
 
-<h3>bot.py</h3>
+<h3>bot.py and weather.py</h3>
 1.Loads the bot token and weather API key.
 
 2.Loads the model and encoder created in train_model.py.
