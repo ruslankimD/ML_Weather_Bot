@@ -20,8 +20,8 @@ project/
 │   └─ label_encoder.joblib                 # Class Encoder
 
 ├─ Bot/
-
-│   └─ weather_bot.py                       # Telegram-bot
+    ├─ bot.py                           # Telegram-bot
+│   └─ weather.py                       # Function for bot
 
 └─ README.md
 
